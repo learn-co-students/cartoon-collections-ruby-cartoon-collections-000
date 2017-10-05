@@ -4,12 +4,12 @@ def roll_call_dwarves(dwarves)
 end
 end
 
-def summon_captain_planet(elements)
-  elements.map {|x| x.capitalize + "!"}
+def summon_captain_planet(fruits)
+  fruits.map {|x| x.capitalize + "!"}
 end
 
-def long_planeteer_calls(x)
-  x.any? {|v| v.length > 4}
+def long_planeteer_calls(elements)
+  elements.any? {|x| x.length > 4}
 end
 
 def find_the_cheese(possible_cheeses)
