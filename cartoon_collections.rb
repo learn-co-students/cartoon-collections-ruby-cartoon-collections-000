@@ -31,14 +31,22 @@ puts long_planeteer_calls(planeteer_calls)
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  result = snacks.find do |cheese|
+  snacks.find do |cheese|
     cheese_types.include?(cheese)
-    result
   end
 end
 
+def find_the_cheeses(cheese)
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese.find do |c|
+    cheese_types.include?(c)
+  end
+end
 
+print find_the_cheese(["cat", "cheddar", "gouda"])
+print find_the_cheeses(["cat", "cheddar", "gouda"])
 
 
 cheese = ["tomato soup", "cheddar", "oyster crackers", "gouda"]
 find_the_cheese(cheese)
+print find_the_cheese(cheese)
