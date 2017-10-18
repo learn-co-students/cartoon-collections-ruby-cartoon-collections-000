@@ -23,7 +23,7 @@ puts summon_captain_planet(planet_calls)
 
 def long_planeteer_calls(planeteer_calls)# code an argument here
   # Your code here
-  planeteer_calls.length > 4
+  planeteer_calls.any? { |word| word.length > 4}
 end
 planeteer_calls = ["puff", "go", "two"]
 puts long_planeteer_calls(planeteer_calls)
