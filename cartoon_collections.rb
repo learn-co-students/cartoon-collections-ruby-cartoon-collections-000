@@ -15,7 +15,7 @@ def long_planeteer_calls(calls)
     return false
   end 
 end
- #using any? by convention returns true without having to use return true/false. Also if I want to find out which words, then I would use .select 
+ 
 def find_the_cheese(array)
    cheese_types = ["cheddar", "gouda", "camembert"] 
  array.each do |food|  
