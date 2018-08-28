@@ -5,11 +5,8 @@ def roll_call_dwarves(array)
 end
 
 def summon_captain_planet(array)
-  array2 = array.collect do |call|
-   call.capitalize
-  end
-  array2.collect do |call|
-    call << "!"
+  array.collect do |call|
+   call.capitalize + "!"
   end
 end
 
@@ -20,14 +17,8 @@ def long_planeteer_calls(short_words)
 end
 
 def find_the_cheese(array)
-    cheese_types = ["cheddar", "gouda", "camembert"]
-  answer = array.find do |cheese|
-    cheese_types.include?(cheese)
-  end
-  
-  if cheese_types.include?(answer)
-    return answer
-  else
-    return NIL
+  cheese_types = ["cheddar", "gouda", "camembert"]
+   array.find do |item|
+    cheese_types.include?(item)
   end
 end
