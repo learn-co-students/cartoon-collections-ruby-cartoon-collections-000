@@ -1,12 +1,18 @@
+# def roll_call_dwarves(dwarf_names)
+#  dwarf_names.each_with_index do |dwarf_name, index| 
+#    if index + 1 > dwarf_names.length/2 
+#      puts "#{index + 1} #{dwarf_name}"
+#    end
+#  end
+#  nil
+# end
+# puts roll_call_dwarves(["Doc", "Sneezy", "Dopey", "Smiley"])
+
 def roll_call_dwarves(dwarf_names)
-  dwarf_names.each_with_index do |dwarf_name, index| 
-    if index + 1 > dwarf_names.length/2 
-      puts "#{index + 1} #{dwarf_name}"
-    end
+  dwarf_names.each_with_index do |dwarf_name, index|
+    puts "#{index + 1} #{dwarf_name}"
   end
-  nil
 end
-puts roll_call_dwarves(["Doc", "Sneezy", "Dopey", "Smiley"])
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect do |planeteer_call| 
@@ -14,12 +20,9 @@ def summon_captain_planet(planeteer_calls)
   end
 end
 
-
-
 def long_planeteer_calls(calls)
   calls.any? { |call| call.length > 4 }
 end
-
 
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
@@ -28,7 +31,7 @@ def find_the_cheese(foods)
   end 
 end
 
-puts find_the_cheese(["apple", "gouda"])
+# puts find_the_cheese(["apple", "gouda"])
 
 def words_with_b(array_of_words)
   array_of_words.select do |word|
@@ -36,8 +39,9 @@ def words_with_b(array_of_words)
   end
 end 
 
-puts words_with_b(["sally", "bob"])
+#puts words_with_b(["sally", "bob"])
   
   # only those words in the array of words that contain the letter b 
   
   #select
+#end
