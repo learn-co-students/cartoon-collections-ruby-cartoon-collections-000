@@ -1,6 +1,6 @@
 def roll_call_dwarves(dwarf_names)
   dwarf_names.each_with_index do |dwarf_name, index| 
-    if index + 1 <= dwarf_names.length/2 
+    if index + 1 > dwarf_names.length/2 
       puts "#{index + 1} #{dwarf_name}"
     end
   end
