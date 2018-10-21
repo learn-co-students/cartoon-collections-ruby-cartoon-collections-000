@@ -15,7 +15,7 @@ def long_planeteer_calls(array)
       puts "FALSE"
     else 
       puts "TRUE"
-end
+  end
  
 end
 
