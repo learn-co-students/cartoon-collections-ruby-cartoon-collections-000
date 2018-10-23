@@ -8,6 +8,7 @@ end
 
 #returns an array where the elements are capitalized and have an exclamation mark added
 def summon_captain_planet(calls)
+  capitalized_calls = []
   calls.collect {|call| call.capitalize + "!"}
 end
 
@@ -19,6 +20,7 @@ def long_planeteer_calls(long_calls)
   end
 end
 
+#Return the type of cheese that the food array has if it includes cheese
 def find_the_cheese(foods)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
