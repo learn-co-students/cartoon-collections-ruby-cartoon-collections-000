@@ -1,4 +1,4 @@
-require "spec_helper"
+require "spec_helper.rb"
 
 describe "Cartoon Collections" do
   describe "#roll_call_dwarves" do
