@@ -26,8 +26,11 @@ summon_captain_planet(planeteer_calls)
 
 #Method 3: Create a method that determines whether an array contains a word with more than 4 characters. It should return true or false.
 def long_planeteer_calls(word_list) # here, I can use if and else condition (but not required in order to implement true or false value).
-  return word_list.any? {|word| word.length > 4}
-  
+  if word_list.any? {|word| word.length > 4}
+    return true
+  else
+    return false
+  end
 end
 
 short_words = ["puff", "go", "two"]
