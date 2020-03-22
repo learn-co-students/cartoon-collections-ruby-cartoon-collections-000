@@ -1,5 +1,13 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+require pry
+
+  dwarves = []
+def roll_call_dwarves(array)
+  dwarves = array
+  dwarves.each do |helpers|
+end
+  array.each_with_index do |helpers, index|
+  puts"#{index} #{helpers}"  
+end
 end
 
 def summon_captain_planet# code an argument here
