@@ -19,28 +19,30 @@ end
 #   end
 #   # planeteer_calls.map do |element| element << "!"
 #   end
+# answer: Yes, you could but it would slow down your program because you would loop twice
 
-def long_planeteer_calls(list)
-  list.collect do |x|
-    if x.size>4
-      return true
-    end
-      return false
-   end
- end
+# def long_planeteer_calls(list)
+#   list.collect do |x|
+#     if x.size>4
+#       return true
+#     end
+#       return false
+#    end
+#  end
 
 #looks like most people solved with .any? but this is not in the docs!
 #why is the end/return false needed, can we do without?
 #or an else in the loop? Also doesn't work for <4=false
-# Also why can't I use the below:
 #
-# def long_planeteer_calls(list)
-#   list.collect do |x|
-#     return true if x.size>4
-#     end
-#     return false
-#    end
-#  end
+def long_planeteer_calls(list)
+  list.collect do |x|
+    return true if x.size>4
+    end
+    return false
+   end
+
+#     return false if x.size<4 does not work because it asks for
+# if any of the calls are longer than 4, this asks if any less than 4.
 
 def find_the_cheese(array)
 cheese_types = ["cheddar", "gouda", "camembert"]
