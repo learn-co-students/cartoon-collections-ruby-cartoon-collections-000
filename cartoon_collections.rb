@@ -17,14 +17,21 @@ def long_planeteer_calls (short_words)
   end
 
 
+# def find_the_cheese (potential_cheese_array)
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#   found = nil
+# cheese_types.each do |cheese| 
+#   if potential_cheese_array.include?(cheese)
+#   found = cheese
+#   break 
+# end
+# end
+# found
+# end
+
 def find_the_cheese (potential_cheese_array)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  found = nil
-cheese_types.each do |cheese| 
-  if potential_cheese_array.include?(cheese)
-  found = cheese
-  break 
-end
-end
-found
-end
+  cheese_types = ["cheddar","gouda","camembert"]
+  potential_cheese_array.find do |cheese| 
+    cheese_types.include?(cheese)
+  end
+  end
