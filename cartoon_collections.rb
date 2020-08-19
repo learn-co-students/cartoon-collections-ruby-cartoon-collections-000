@@ -29,16 +29,16 @@ end
 
 #Takes an array and returns true if any words are longer than four characters
 def long_planeteer_calls(array)
+  #Iterating over input array and checking if any words in the input array are longer than 4 characters
     array.any?{|word|
     word.length > 4}
 end
 
-def find_the_cheese(array)# code an argument here
-  # the array below is here to help
+#Takes an array and returns the first instance of one of the listed cheeses as a string. If no cheese is found, returns nil.
+def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if array.include?("cheddar") === true
-    return "cheddar"
-  else
-    return nil
-  end
+  #Iterating over input array and outputting the first appearance of cheese_types
+     array.find do |cheese|
+       cheese_types.include?(cheese)
+    end
 end
